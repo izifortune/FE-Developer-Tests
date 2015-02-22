@@ -42,15 +42,17 @@
 }
 
 .flight__price {
-  display: inline-block;
-  float: right;
-  background: $brand-primary;
-  color: $brand-warning;
-  padding: 16px;
-  min-width: 150px;
-  text-align: center;
+    display: inline-block;
+    background: $brand-primary;
+    color: $brand-warning;
+    padding: 16px;
+    min-width: 150px;
+    text-align: center;
+    float: right;
+
   @media screen and (max-width: $screen-sm) {
-    display: block;
     float: none;
+    width: 100%;
   }
+
 }

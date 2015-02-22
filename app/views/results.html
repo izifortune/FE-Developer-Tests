@@ -2,9 +2,11 @@
     <div class="header-results__row">
       <a ui-sref="main" class="header-results__item"><span class="glyphicon glyphicon-arrow-left"></span></a>
       <div class="header-results__item header-results__item--40">
+        <span ng-if="results.flights && results.flights[0]">{{results.flights[0].outbound.airportFrom.name}}</span>
         {{results.request.origin}}
       </div>
       <div class="header-results__item header-results__item--40">
+        <span ng-if="results.flights && results.flights[0]">{{results.flights[0].outbound.airportTo.name}}</span>
         {{results.request.destination}}
       </div>
     </div>

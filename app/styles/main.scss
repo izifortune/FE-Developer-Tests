@@ -17,3 +17,8 @@ $border-radius-small:       2px !default;
 @import "ryautocomplete";
 @import "datepicker-overrides";
 @import "alert-ryanair";
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
