@@ -1,0 +1,30 @@
+.ryautocomplete {
+  position: relative;
+}
+
+.ryautocomplete .autocomplete-list {
+  position: absolute;
+  // width: 100%;
+  background: white;
+  width: 100%;
+  border: 1px solid $brand-warning;
+  z-index: 10;
+}
+
+.ryautocomplete .autocomplete-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ryautocomplete .autocomplete-list ul li {
+  cursor: pointer;
+  color: $brand-primary;
+  text-align: left;
+  padding: 16px;
+}
+
+.ryautocomplete .autocomplete-list ul li:hover {
+  background-color: lighten($brand-primary, 20%);
+  color: white;
+}

@@ -1,0 +1,62 @@
+.main-header {
+  background-color: $brand-primary;
+  height: 56px;
+
+  img {
+    padding: 10px;
+  }
+}
+
+.claim {
+  color: $brand-primary;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.main-form {
+  padding: 8px;
+  background: rgba(white, 0.85);
+  border-radius: 2px;
+  display: inline-block;
+
+  @media screen and (max-width: $screen-sm) {
+    width: 100%;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    input {
+      font-size: 14px;
+      width: 200px;
+    }
+  }
+
+}
+
+.date-input {
+  max-width: 130px;
+
+  @media screen and (max-width: $screen-sm) {
+    max-width: 100%;
+  }
+}
+
+.form-group.date-group {
+  @media screen and (max-width: $screen-sm) {
+    display: inline-block;
+    width: 49%;
+  }
+}
+
+.form-wrapper {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  @media screen and (max-width: $screen-sm) {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,19 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+
+$brand-primary: #22356B;
+$brand-warning: #FDC40F;
+$input-border-focus:   $brand-warning;
+$border-radius-base:        2px !default;
+$border-radius-large:       2px !default;
+$border-radius-small:       2px !default;
+
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+
+@import "layout";
+@import "main-view";
+@import "results";
+@import "flight";
+@import "ryautocomplete";
+@import "datepicker-overrides";
+@import "alert-ryanair";

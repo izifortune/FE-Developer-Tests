@@ -1,0 +1,12 @@
+<div class="ryautocomplete">
+  <div ng-transclude></div>
+  <div class="autocomplete-list hidden">
+    <ul>
+<!--       <li ng-click="selectAirport()"> asdasdsadas </li>
+      <li> asdasdsadas</li>
+      <li> asdasdsadas</li>
+      <li> asdasdsadas</li>
+ -->      <li ng-click="selectAirport(r)" ng-repeat="r in results">{{r.name}} ({{r.iataCode}})</li>
+    </ul>
+  </div>
+</div>

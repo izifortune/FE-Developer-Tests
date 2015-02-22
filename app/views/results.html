@@ -1,0 +1,25 @@
+<div class="header-results">
+    <div class="header-results__row">
+      <a ui-sref="main" class="header-results__item"><span class="glyphicon glyphicon-arrow-left"></span></a>
+      <div class="header-results__item header-results__item--40">
+        {{results.request.origin}}
+      </div>
+      <div class="header-results__item header-results__item--40">
+        {{results.request.destination}}
+      </div>
+    </div>
+    <div class="header-results__row">
+      <div class="header-results__item header-results__item--100">
+        {{results.request.startDate}} - {{results.request.endDate}}
+      </div>
+    </div>
+</div>
+<div class="container-results">
+  <flight data-flight="f.outbound" ng-repeat="f in results.flights | orderBy : 'outbound.price.value' : false">
+  </flight>
+  <div ng-if="!results.flights">
+    <div class="alert alert-ryanair">
+      <p>No results found, try with another destiantion or check with other dates</p>
+    </div>
+  </div>
+</div>

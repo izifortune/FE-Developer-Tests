@@ -1,0 +1,13 @@
+<div class="flight">
+  <div class="flight__from">
+    <div class="date">Departure: <strong>{{flight.dateFrom | date:'yyyy-MM-dd HH:mm'}}</strong></div>
+  </div>
+  <div class="flight__separator">
+  </div>
+  <div class="flight__to">
+    <div class="airport__date">Arrive <strong>{{flight.dateTo | date:'yyyy-MM-dd HH:mm'}}</strong></div>
+  </div>
+  <div class="flight__price">
+    {{flight.price.currencySymbol}} {{flight.price.value}}
+  </div>
+</div>
