@@ -11,8 +11,12 @@ describe('Service: validDate', function () {
     validDate = _validDate_;
   }));
 
-  it('should do something', function () {
-    expect(!!validDate).toBe(true);
+  it('should return false if input is random string', function () {
+    expect(validDate('asdadsdas')).toBeNaN();
+  });
+
+  it('should return true if input can be parse as date', function () {
+    expect(new Date(validDate('2015-02-22'))).toEqual(new Date('2015-02-22'));
   });
 
 });

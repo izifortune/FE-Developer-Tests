@@ -11,8 +11,24 @@ describe('Service: validIata', function () {
     validIata = _validIata_;
   }));
 
-  it('should do something', function () {
-    expect(!!validIata).toBe(true);
+  it('should return true is you pass a string with 3 chars', function () {
+    expect(validIata('AAA')).toBe(true);
+  });
+
+  it('should return false is you pass a string with 2 chars', function () {
+    expect(validIata('AA')).toBe(false);
+  });
+
+  it('should return false is you pass a string with 4 chars', function () {
+    expect(validIata('AAAA')).toBe(false);
+  });
+
+  it('should return false is you pass a number', function () {
+    expect(validIata(12312)).toBe(false);
+  });
+
+  it('should return false is you pass an object', function () {
+    expect(validIata({})).toBe(false);
   });
 
 });

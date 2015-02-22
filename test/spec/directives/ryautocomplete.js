@@ -3,12 +3,12 @@
 describe('Directive: ryautocomplete', function () {
 
   // load the directive's module
+  beforeEach(module('views/directives/ryautocomplete.html'));
   beforeEach(module('cheapFlightFinderApp'));
 
   var element,
     scope;
 
-  beforeEach(module('views/directives/ryautocomplete.html'));
 
   beforeEach(inject(function ($rootScope) {
     scope = $rootScope.$new();
