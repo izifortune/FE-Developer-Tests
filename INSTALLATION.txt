@@ -1,0 +1,20 @@
+#Installation steps
+
+`npm install && bower install` in the root folder.
+
+Since i had problems with your API ( they didn't respond with JSONP but with
+JSON ) i made a small proxy based on express. You can see the source code on the
+folder proxy.
+
+So before you launch the project go to proxy directory
+
+`npm install` on that directory and launch node bin/www
+
+Now you can launch the app with `grunt serve`
+
+I made a couple of tests too, you can check them in test/spec
+
+For launch the tests hit `grunt test`
+
+You can also checkout the production version with `grunt build`
+ and then serve the content of dist directory.
